@@ -1,0 +1,177 @@
+<main class="main">
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home">Pablo's Portfolio</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-item">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#technologies" class="nav-item">Technologies</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#contact" class="btn btn-outline">Get in contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="containerP">
+      <div class="hero-content">
+        <h1>Hey, I'm <span class="highlight">Pablo 🫡</span></h1>
+        <p class="subtext">
+          I am a junior full-stack/back-end developer with experience in NestJS
+          and PostgreSQL. Eager to grow professionally and take on new
+          challenges.
+        </p>
+        <div class="buttons">
+          <a href="#about" class="botón-primary">Learn more</a>
+          <a href="#contact" class="btn-secondary">Get in contact</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="me.png" alt="Pablo's Portrait" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a 20-year-old full-stack developer specializing in NestJS with a
+        passion for web development and continuous learning. <br />
+        My search for a passionate career led me to the world of Full-Stack
+        development, with a focus on back-end. I explored different jobs until I
+        discovered programming, which captivated me with its potential for
+        creating innovative solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Technologies Section -->
+  <section id="technologies" class="section">
+    <div class="container">
+      <h2>Technologies</h2>
+      <p>These are some of the technologies I have experience using:</p>
+      <div class="experience-images">
+        <img src="js.png" alt="JavaScript" />
+        <img src="angular.png" alt="Angular" />
+        <img src="css.png" alt="CSS" />
+        <img src="html.png" alt="HTML" />
+        <img src="nodejs.png" alt="Node.js" />
+        <img src="nestjs.png" alt="NestJS" />
+        <img src="postgreSQL.png" alt="PostgreSQL" />
+        <img src="ts.png" alt="TypeScript" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <h3>Photovoltaic Plant Data System</h3>
+        <p>
+          I created a system that centralizes data from multiple photovoltaic
+          plant APIs and displays various graphs showing data such as
+          generation, expected generation, power, etc. I used Angular 18 for the
+          frontend, NestJS for the backend, and PostgreSQL for the database.
+          Additionally, I implemented Excel readers to upload data from
+          different photovoltaic plants.
+        </p>
+        <img
+          src="Screenshot_5.png"
+          alt="Photovoltaic Plant Data System Screenshot"
+          class="project-image"
+        />
+        <h4>Technologies Used:</h4>
+        <div class="experience-images">
+          <img src="postgreSQL.png" alt="PostgreSQL" />
+          <img src="nestjs.png" alt="NestJS" />
+          <img src="ts.png" alt="TypeScript" />
+          <img src="excel1.png" alt="Excel" id="excel" />
+        </div>
+      </div>
+      <div class="project-container">
+        <h3>Comprehensive Hotel Management and Reservation System</h3>
+        <p>
+          Developed the backend, entity architecture, and relational database
+          schema for a hotel reservation system using NestJS and PostgreSQL.
+          Implemented authentication and authorization using JWT and OAuth, and
+          integrated Cloudinary for media management. Additionally, created a
+          full-fledged admin system where an administrator user can modify
+          nearly all aspects of services, features, rooms, users, and manage a
+          monthly earnings system, among other functionalities.
+        </p>
+        <img
+          src="hotel.png"
+          alt="Hotel Management System Screenshot"
+          class="project-image"
+        />
+        <h4>Technologies Used:</h4>
+        <div class="experience-images">
+          <img src="postgreSQL.png" alt="PostgreSQL" />
+          <img src="nestjs.png" alt="NestJS" />
+          <img src="ts.png" alt="TypeScript" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact me</h2>
+      <form
+        action="https://formspree.io/f/xzzpqvdj"
+        method="POST"
+        class="contact-form"
+      >
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="form-control"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            class="form-control"
+            placeholder="Your message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+
+      <div class="experience-images social-links">
+        <a
+          href="https://www.linkedin.com/in/pablo-rodr%C3%ADguez-2008b7298/"
+          target="_blank"
+        >
+          <img src="linkedin.png" alt="LinkedIn" id="linkedin" />
+        </a>
+        <a href="https://github.com/PabloRodriguez16" target="_blank">
+          <img src="github.png" alt="GitHub" id="github" />
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<router-outlet></router-outlet>
